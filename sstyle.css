@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ol {
+    padding-left: 50px;
+}
+ul {
+    list-style: none;
+}
+body {
+    height: 100vh;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    background: rgb(110, 184, 180);
+}
+.block-window {
+    position: fixed;
+    z-index: -100;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+div .window-hidden {
+    z-index: 100;
+}
+.window {
+    position: relative;
+    width: 500px;
+    min-height: 270px;
+    background: rgb(219, 215, 215);
+    padding: 10px 10px 50px 10px;
+    border-radius: 15px;
+}
+.close {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    padding: 5px 8px;
+    border-radius: 7px;
+    border: none;
+    transition: .28s;
+}
+.close:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.close:active {
+    transform: scale(1);
+}
+.open {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 5px;
+    min-width: 150px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: -3px 5px 15px silver;
+    font-size: 30px;
+    color: springgreen;
+    background: rgb(194, 95, 181);
+    text-transform: uppercase;
+    transition: .28s;
+}
+.open:hover {
+    cursor: pointer;
+    transform: translate(-2px, -2px);
+    background: springgreen;
+    color:rgb(194, 95, 181);
+}
+.open:active {
+    transform: translate(0, 0);
+}
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: rgb(36, 75, 107);
+    text-shadow: 0 0 5px rgb(250, 245, 245);
+    border-radius: 15px;
+    box-shadow: 0 0 20px white;
+    padding: 50px;
+    background: rgb(230, 174, 208);
+}
+ul {
+    border-bottom: 3px solid rgb(238, 238, 238);
+    box-shadow: 0 3px 15px silver;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 7px;
+}
+ul > li:first-child {
+    margin-bottom: 10px;
+}
+.traffic-lights {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    padding: 5px 0;
+    width: 50px;
+    background: rgb(38, 9, 83);
+    border-radius: 5px;
+}
+.traffic {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border-radius: 50%;
+    margin: 5px;
+    transition: .28s;
+}
+.red {
+    background:rgba(255, 0, 0, .3);
+}
+.orange {
+    background:rgba(255, 165, 0, .3);
+}
+.green {
+    background:rgba(0, 128, 0, .3);
+}
+
+.red:hover {
+    background:rgba(255, 0, 0, .9);
+    cursor: pointer;
+}
+.orange:hover {
+    background:rgba(255, 165, 0, .9);
+    cursor: pointer;
+}
+.green:hover {
+    background:rgba(0, 128, 0, .9);
+    cursor: pointer;
+}
+.red-active {
+    background: rgb(255, 0, 0);
+}
+.orange-active {
+    background: rgb(255, 165, 0);
+}
+.green-active {
+    background: rgb(0, 128, 0);
+}
